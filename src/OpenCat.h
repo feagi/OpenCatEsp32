@@ -375,13 +375,13 @@ bool interruptedDuringBehavior = false;
 bool lowBatteryQ = false;
 bool gyroUpdateQ = true;
 bool fineAdjustQ = true;
-bool gyroBalanceQ = true;
-bool printGyroQ = false;
+bool gyroBalanceQ = false;
+bool printGyroQ = true;
 bool autoSwitch = false;
 bool walkingQ = false;
 bool manualHeadQ = false;
 bool nonHeadJointQ = false;
-bool workingStiffness = true;
+bool workingStiffness = false;
 bool manualEyeColorQ = false;
 // bool keepDirectionQ = true;
 #define HEAD_GROUP_LEN 4  // used for controlling head pan, tilt, tail, and other joints independent from walking
