@@ -51,7 +51,7 @@ void loop() {
   //  //— read environment sensors (low level)
   readEnvironment();  //update the gyro data
   //  //— special behaviors based on sensor events
-  dealWithExceptions();  // low battery, fall over, lifted, etc.
+//  dealWithExceptions();  // low battery, fall over, lifted, etc.
   if (!tQueue->cleared()) {
     tQueue->popTask();
   } else {

@@ -373,8 +373,8 @@ long lastSerialTime = 0;
 
 bool interruptedDuringBehavior = false;
 bool lowBatteryQ = false;
-bool gyroUpdateQ = true;
-bool fineAdjustQ = true;
+bool gyroUpdateQ = false;
+bool fineAdjustQ = false;
 bool gyroBalanceQ = false;
 bool printGyroQ = true;
 bool autoSwitch = false;
@@ -605,7 +605,7 @@ void initRobot() {
   Wire.begin();
   // #endif
   SoftwareVersion = SoftwareVersion + BOARD + "_" + DATE;
-  PTL('k');
+  PTL("gPb");
   PTLF("Flush the serial buffer...");
   PTL("\n* Start *");
   printToAllPorts(MODEL);
